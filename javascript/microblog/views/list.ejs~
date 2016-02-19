@@ -1,5 +1,0 @@
-<ul>
-    <% items.forEach(function(item) { %>
-    <% include listitem item %>
-    <% } %>
-</ul>

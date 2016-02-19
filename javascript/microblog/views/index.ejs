@@ -1,0 +1,20 @@
+<% if (!user) { %>
+    <div class="hero-unit">
+        <h1>Welcome to Microblog</h1>
+        <p>Microblog is a microblog system based on node.js</p>
+        <p>
+            <a class="btn btn-primary btn-large" href="/login">Login</a>
+            <a class="btn btn-large" href="/register">Register</a>
+        </p>
+    </div>
+<% } else { %>
+    <%- partial('say') %>
+<% } %>
+<%- partial('posts', {
+    posts: posts,
+}) %>
+<div class="row">
+    <div class="span4">
+        <h2>Kensuke always works hard to become a red coder.</h2>
+    </div>
+</div>
